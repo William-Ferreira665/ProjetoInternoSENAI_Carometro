@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container{
+    /* background-color: blue; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ff2200;
+    width: 100%;
+    height: 77px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.menu_header{
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_header a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.icone_cracha{
+    width: 30px;
+    height: 30px;
+    margin-right: -55px;
+}
+
+.icone_carometro{
+    height: 30px;
+    width: 30px;
+    margin-right: -55px;
+}
+
+.icone_perfil{
+    height: 30px;
+    width: 30px;
+    margin-right: -55px;
+}
+
+.fundo{
+    background-color: #1E1C21;
+    height: 1085px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form{
+    height: 630px;
+    width: 770px;
+    background-image: url(file:///C:/Users/49674286810.INFOSCS/OneDrive/SENAI%20Projects/2022-3S-3%C2%BADM/EstilizacaoINNP/_assets/jeswin-thomas-8nHQx4zi9Wk-unsplash.jpg);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 90px;
+}
+
+.divisao{
+    width: 100%;
+    height: 235px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campos span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.campos input{
+    background-color: #ABABAB;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.campos select{
+    background-color: #ABABAB;
+    height: 30px;
+    width: 100%;
+}
+
+.enviar{
+    width: 257px;
+    height: 40px;
+    background-color: #001F70;
+    border-radius: 10px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 5px 65px;
+}
+
+/* Tabela */
+
+.lista_players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista_players h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 62px;
+}
+
+table{
+    border: 2px solid white;
+    width: 770px;
+    border-collapse: collapse;
+}
+
+.lista_players th{
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    height: 60px;
+    border-left: 1px solid black;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.lista_players td{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    height: 58px;
+    padding-left: 25px;
+}
+
+table img{
+    height: 38px;
+}
+
+@media(min-width:320px) {
+    /* Título com imagem de fundo */
+    .container_titulo {
+        height: 135px;
+        background-size: 440px;
+    }
+    .color h1 {
+        font-size: 33px;
+    }
+    /* Formulário */
+    .fundo {
+        height: 675px;
+    }
+    form {
+        height: 351px;
+        width: 275px;
+        padding: 10px 15px;
+    }
+    .divisao {
+        height: 165px;
+    }
+    .enviar {
+        width: 200px;
+        padding: 5px 40px;
+    }
+    /* Tabela de jogadores */
+    .lista_players h2 {
+        font-size: 30px;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+@media(min-width:425px){
+    /* Título com imagem de fundo */
+    .container_titulo {
+        height: 135px;
+        background-size: 520px;
+    }
+    .color h1 {
+        font-size: 40px;
+    }
+    /* Formulário */
+    .fundo {
+        height: 675px;
+    }
+    form {
+        width: 330px;
+    }
+    /* Tabela de jogadores */
+    .lista_players h2 {
+        font-size: 35px;
+    }
+}
+
+@media(min-width:768px){
+    /* Título com imagem de fundo */
+    .container_titulo {
+        height: 160px;
+        background-size: 800px;
+    }
+    .color h1 {
+        font-size: 55px;
+    }
+    /* Formulário */
+    .fundo {
+        height: 850px;
+    }
+    form {
+        height: 590px;
+        width: 590px;
+        padding: 10px 45px;
+    }
+    .divisao {
+        height: 235px;
+    }
+    .enviar {
+        width: 235px;
+        padding: 5px 57px;
+    }
+}
+
+@media(min-width:1024px){
+     /* Título com imagem de fundo */
+     .container_titulo {
+        height: 225px;
+        background-size: 1070px;
+    }
+    .color h1 {
+        font-size: 70px;
+    }
+    /* Formulário */
+    .fundo {
+        height: 1000px;
+    }
+    form {
+        height: 590px;
+        width: 700px;
+        padding: 10px 45px;
+    }
+    /* Tabela Jogadores */
+    .lista_players h2 {
+        font-size: 45px;
+    }
+}
+
+@media(min-width:1440px){
+     /* Título com imagem de fundo */
+     .container_titulo {
+        height: 300px;
+        background-size: 1500px;
+    }
+    .color h1 {
+        font-size: 80px;
+    }
+    /* Formulário */
+    .fundo {
+        height: 1150px;
+    }
+    form {
+        height: 700px;
+        width: 900px;
+    }
+    .divisao {
+        height: 240px;
+    }
+    /* Tabela Jogadores */
+    .lista_players h2 {
+        font-size: 55px;
+    }
+    table {
+        width: 75%;
+    }
+}
+
+@media(min-width:1920px){
+    /* Título com imagem de fundo */
+    .container_titulo {
+        height: 400px;
+        background-size: 1900px;
+    }
+    .color h1 {
+        font-size: 80px;
+    }
+}
+
+@media(min-width:2160px){
+   /* Título com imagem de fundo */
+   .container_titulo {
+        height: 450px;
+        background-size: 2570px;
+    }
+    .color h1 {
+        font-size: 110px;
+    } 
+    /* Formulário */
+    .fundo {
+        height: 1150px;
+    }
+    form {
+        width: 1100px;
+    }
+    .divisao {
+        height: 310px;
+    }
+    .campos span {
+        font-size: 25px;
+    }
+    .campos input {
+        height: 45px;
+    }
+    .campos select {
+        height: 40px;
+    }
+    .enviar {
+        height: 50px;
+        font-size: 25px;
+        padding: 7px 43px;
+    }
+    /* Tabela */
+    table{
+        width: 1100px;
+    }
+    .lista_players th {
+        font-size: 25px;
+    }
+    .lista_players td {
+        font-size: 25px;
+    }
+}

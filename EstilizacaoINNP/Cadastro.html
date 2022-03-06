@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carômetro</title>
+    <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
+<body>
+
+    <header>
+        <div class="container container_header">
+            <a href="#container_banner"><img src="_assets/logo_sesi.png" alt="logo"></a>
+            <nav class="menu_header">
+                <img class="icone_cracha" src="_assets/icone_lista.png" alt="icone lista">
+                <a href="#">Meu crachá</a>
+                <img class="icone_carometro" src="_assets/icone_agenda.png" alt="icone carometro">
+                <a href="#">Carômetro</a>
+                <img class="icone_perfil" src="_assets/icone_perfil.png" alt="icone perfil">
+                <a href="#">Perfil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container_titulo">
+            <div class="color">
+                <h1>Cadastro</h1>
+            </div>
+        </div>
+        <div class="fundo">
+            <form action="">
+                <div class="divisao">
+                    <action action="/action_page.php">
+                        <input type="file" id="myFile" name="filename">
+                        <input type="submit">
+                      </action>
+                     
+                    <div class="campos">
+                        <span>Nome</span>
+                        <label for=""></label><input type="text" name="nameJ" placeholder="Nome" />
+                    </div>
+                    <div class="campos">
+                        <span>RG</span>
+                        <label for=""></label><input type="text" name="RGJ" placeholder="RG" />
+                    </div>
+                    <div class="campos">
+                        <span>Data de Nascimento</span>
+                        <label for=""></label><input type="date" name="DataJ" placeholder="DD/MM/YYYY" />
+                    </div>
+                    <div class="campos">
+                        <span>E-mail</span>
+                        <label for=""></label><input type="email" name="EmailJ" placeholder="E-mail" />
+                    </div>
+                    <div class="campos">
+                        <span>Senha</span>
+                        <label for=""></label><input type="password" name="SenhaJ" placeholder="Senha" />
+                    </div>
+                </div>
+                <div class="campos">
+                    <span>Tipo</span>
+                    <div class="equipe">
+                        <select name="format" id="format">
+                            <option selected disabled>Escolha o tipo de usuário</option>
+                            <option value="1">Aluno</option>
+                            <option value="2">Professor</option>
+                            <option value="3">Administrador</option>
+                        </select>
+                    </div>
+                </div>
+                <label class="enviar" for="botao">Cadastrar</label><input type="submit" name="botao"
+                    style="display: none;" />
+            </form>
+    </main>
